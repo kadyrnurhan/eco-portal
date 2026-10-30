@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoVolunteers — Portal for an Ecological Volunteer Movement</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Theme switch (pure CSS): checkbox controls light/dark mode -->
+  <input type="checkbox" id="theme-toggle" class="visually-hidden">
+  <input type="checkbox" id="menu-toggle" class="visually-hidden">
+
+  <header class="header">
+    <a href="#" class="logo"><img src="images/logo.svg" alt="Recycling symbol"> <span>EcoVolunteers</span></a>
+    <label for="menu-toggle" class="burger" aria-label="Open menu"><span></span><span></span><span></span></label>
+    <nav class="nav">
+      <ul>
+        <li><a href="#actions">Eco-Actions</a></li>
+        <li><a href="#points">Collection Points</a></li>
+        <li><a href="#tips">Eco-Tips</a></li>
+        <li><a href="#join">Become a Volunteer</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="actions">
+      <h1>Let's Make Our City Cleaner Together</h1>
+      <p>Join clean-up days, find waste collection points and help Almaty become greener.</p>
+      <a href="#join" class="btn">I Want to Join the Clean-up Day</a>
+    </section>
+
+    <section class="points" id="points">
+      <h2>Collection Points</h2>
+      <section class="grid">
+        <article class="card">
+          <h3>Abay Ave, 52</h3>
+          <p><strong>Schedule:</strong> Mon–Fri, 09:00–18:00</p>
+          <ul class="tags"><li>Polymers</li><li>Glass</li><li>Paper</li></ul>
+        </article>
+        <article class="card">
+          <h3>Tole Bi St, 187</h3>
+          <p><strong>Schedule:</strong> Daily, 10:00–20:00</p>
+          <ul class="tags"><li>Polymers</li><li>Paper</li></ul>
+        </article>
+        <article class="card">
+          <h3>Al-Farabi Ave, 77</h3>
+          <p><strong>Schedule:</strong> Sat–Sun, 10:00–16:00</p>
+          <ul class="tags"><li>Glass</li><li>Paper</li></ul>
+        </article>
+        <article class="card">
+          <h3>Raiymbek Ave, 221</h3>
+          <p><strong>Schedule:</strong> Mon–Sat, 08:00–17:00</p>
+          <ul class="tags"><li>Polymers</li><li>Glass</li></ul>
+        </article>
+      </section>
+    </section>
+
+    <section class="tips" id="tips">
+      <h2>Eco-Tips</h2>
+      <section class="grid">
+        <article class="card"><h3>Sort at home</h3><p>Keep separate bags for plastic, glass and paper.</p></article>
+        <article class="card"><h3>Rinse containers</h3><p>Clean packaging is easier to recycle.</p></article>
+        <article class="card"><h3>Use reusable bags</h3><p>One cloth bag replaces hundreds of plastic ones.</p></article>
+      </section>
+    </section>
+
+    <section class="join" id="join">
+      <h2>Become a Volunteer</h2>
+      <form class="form" action="#" method="post">
+        <label>Name <input type="text" name="name" required minlength="2" placeholder="Your name"></label>
+        <label>Age <input type="number" name="age" required min="14" max="99" placeholder="18"></label>
+        <label>Email <input type="email" name="email" required placeholder="you@mail.com"></label>
+        <label>Phone <input type="tel" name="phone" required pattern="\+?[0-9]{10,12}" placeholder="+77001234567"></label>
+        <label>District
+          <select name="district" required>
+            <option value="">Choose district</option>
+            <option>Almaly</option><option>Bostandyk</option><option>Medeu</option><option>Auezov</option><option>Alatau</option>
+          </select>
+        </label>
+        <label>Competency
+          <select name="skill" required>
+            <option value="">Choose competency</option>
+            <option>Transport</option><option>Resources</option><option>Manual labor</option>
+          </select>
+        </label>
+        <button type="submit" class="btn">Send Application</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <section class="stats">
+      <article><strong>12 450 kg</strong><span>plastic recycled</span></article>
+      <article><strong>8 300 kg</strong><span>paper recycled</span></article>
+      <article><strong>640</strong><span>volunteers</span></article>
+    </section>
+    <nav class="footer-links">
+      <a href="https://www.wwf.org" target="_blank" rel="noopener">WWF</a>
+      <a href="https://www.greenpeace.org" target="_blank" rel="noopener">Greenpeace</a>
+      <a href="https://www.unep.org" target="_blank" rel="noopener">UNEP</a>
+    </nav>
+    <label for="theme-toggle" class="theme-btn">🌓 Light / Dark</label>
+    <p class="legal">© 2026 EcoVolunteers. Non-profit community. All rights reserved.</p>
+  </footer>
+</body>
+</html>
